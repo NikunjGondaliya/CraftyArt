@@ -1,16 +1,15 @@
-import React from 'react';
-import './App.css';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
-import Home from './pages/home/home';
+import "./App.css";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
+import Home from "./pages/home/home";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Home/>
-      <Footer/>
-   </>
+      <Header />
+      <Home />
+      <Footer />
+    </>
   );
 }
 
