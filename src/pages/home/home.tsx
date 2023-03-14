@@ -1,9 +1,8 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import loadjs from "loadjs";
 
 export default function Home(): JSX.Element {
-  const navigate = useNavigate();
-
   return (
     <>
       {/* =============== SMALL SCREEEN BOTTOM ============ */}
@@ -1014,13 +1013,15 @@ export default function Home(): JSX.Element {
           >
             Show more
           </a> */}
-              <text
-                name="Show more"
-                aria-label="Show more"
-                onClick={() => {
-                  navigate("./alltemplate");
-                }}
-              />
+              <Link
+                to="/alltemplate"
+                className="show_more_link text-decoration-none me-3"
+              >
+                Show more
+              </Link>
+              {/* <text name='Show more' aria-label='Show more' onClick={()=>{
+            navigate('./alltemplate')
+          }}/> */}
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -1209,12 +1210,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Latest Templates</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -1390,12 +1397,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta Post</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -1581,12 +1594,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta Story</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -1791,12 +1810,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Logo</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2014,12 +2039,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Invitation</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2225,12 +2256,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta (Landscape)</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2330,12 +2367,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta (Portrait)</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2510,12 +2553,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Facebook (Landscape)</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2631,12 +2680,18 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Certificate (Landscape)</h3>
-              <a
-                href="alltemplate.html"
+              {/* <a
+            href="alltemplate.html"
+            className="show_more_link text-decoration-none me-3"
+          >
+            Show more
+          </a> */}
+              <Link
+                to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
-              </a>
+              </Link>
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -2954,4 +3009,8 @@ export default function Home(): JSX.Element {
       </section>
     </>
   );
+}
+
+function componentDidMount() {
+  throw new Error("Function not implemented.");
 }

@@ -1,13 +1,36 @@
+import { useLayoutEffect } from "react";
 import "./App.css";
 import Footer from "./components/footer/footer";
 import Header from "./components/header/header";
 import Home from "./pages/home/home";
+import { Route, Routes, useLocation } from "react-router-dom";
+import loadjs from "loadjs";
+import TermCondition from "./pages/aboutus/aboutus";
+import AllTemplate from "./pages/allTemplate/allTemplate";
+import ContactUs from "./pages/contactus/contactus";
+import CreateBlog from "./pages/createblog/createblog";
+import Invoice from "./pages/invoice/invoice";
 
 function App() {
+  const location = useLocation();
+  // Scroll to top if path changes
+  useLayoutEffect(() => {
+    loadjs("assets/js/owl.js", () => {});
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/createblog" element={<CreateBlog />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/alltemplate" element={<AllTemplate />} />
+        <Route path="/invoice" element={<Invoice />} />
+        <Route path="/term-condition" element={<TermCondition />} />
+      </Routes>
       <Footer />
     </>
   );

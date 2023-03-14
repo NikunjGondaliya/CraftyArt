@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -444,13 +444,14 @@ export default function Footer() {
               <div className="d-flex">
                 <ul className="list-unstyled me-5 me-sm-0 pe-5">
                   <li className="py-2">
-                    <a
+                    {/* <a
                       href="alltemplate.html"
                       className="text-decoration-none footer_items"
                     >
                       {" "}
                       Templates{" "}
-                    </a>
+                    </a> */}
+                    <Link to="/alltemplate" className="text-decoration-none footer_items">Templates</Link>
                   </li>
                   <li className="py-2">
                     <a
@@ -471,13 +472,14 @@ export default function Footer() {
                     </a>
                   </li>
                   <li className="py-2">
-                    <a
+                    {/* <a
                       href="index.html"
                       className="text-decoration-none footer_items"
                     >
                       {" "}
                       Instagram Story{" "}
-                    </a>
+                    </a> */}
+                    <Link to="/home" className="text-decoration-none footer_items">Instagram Story</Link>
                   </li>
                 </ul>
                 <ul className="list-unstyled">
@@ -535,13 +537,14 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="contactus.html"
                     className="text-decoration-none footer_items"
                   >
                     {" "}
                     Contact Us{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/contactus" className="text-decoration-none footer_items">Contact Us</Link>
                 </li>
                 <li className="py-2">
                   <a
@@ -567,22 +570,24 @@ export default function Footer() {
               <h6 className="footer_title">Legal</h6>
               <ul className="list-unstyled">
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="term&condition.html"
-                    className="text-decoration-none footer_items"
+                     
                   >
                     {" "}
                     Privacy Policy{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/term-condition" className="text-decoration-none footer_items">Privacy Policy</Link>
                 </li>
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="term&condition.html"
                     className="text-decoration-none footer_items"
                   >
                     {" "}
                     Terms and Conditions{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/term-condition" className="text-decoration-none footer_items">Terms and Conditions</Link>
                 </li>
                 <li className="py-2">
                   <a
@@ -618,13 +623,14 @@ export default function Footer() {
                   </a>
                 </li>
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="contactus.html"
                     className="text-decoration-none footer_items"
                   >
                     {" "}
                     Help center{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/contactus" className="text-decoration-none footer_items">Help center</Link>
                 </li>
               </ul>
             </div>
@@ -634,22 +640,24 @@ export default function Footer() {
               <h6 className="footer_title">Support</h6>
               <ul className="list-unstyled">
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="contactus.html"
                     className="text-decoration-none footer_items"
                   >
                     {" "}
                     FAQ{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/contactus" className="text-decoration-none footer_items">FAQ</Link>
                 </li>
                 <li className="py-2">
-                  <a
+                  {/* <a
                     href="contactus.html"
                     className="text-decoration-none footer_items"
                   >
                     {" "}
                     Contact Us{" "}
-                  </a>
+                  </a> */}
+                  <Link to="/contactus" className="text-decoration-none footer_items">Contact Us</Link>
                 </li>
               </ul>
             </div>
