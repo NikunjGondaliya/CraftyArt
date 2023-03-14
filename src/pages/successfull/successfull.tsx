@@ -1,9 +1,8 @@
 import React from "react";
 
-export default function AboutUs(): JSX.Element {
+export default function Successful() {
   return (
     <>
-      {/* =============== SMALL SCREEEN BOTTOM ============ */}
       <div className="small_fixed_footer d-bock d-sm-none">
         <div className="small_screen_footer_link position-relative">
           <div className="d-flex justify-content-between">
@@ -303,7 +302,7 @@ export default function AboutUs(): JSX.Element {
                         type="number"
                         className="form-control border-0"
                         id="width"
-                        placeholder={"1920"}
+                        placeholder="1920"
                       />
                     </div>
                     <img
@@ -324,7 +323,7 @@ export default function AboutUs(): JSX.Element {
                       type="number"
                       className="form-control border-0"
                       id="height"
-                      placeholder={"1080"}
+                      placeholder="1080"
                     />
                   </div>
                 </div>
@@ -352,192 +351,36 @@ export default function AboutUs(): JSX.Element {
           </div>
         </div>
       </div>
-      {/* ============= ABOUT US SECTION ======= */}
-      <section className="about_us py-5">
-        <div className="container-fluid">
-          <div className="about_us_header text-center container">
-            <h1 className="mb-5 main_heading position-relative">
-              About Us - What We Do
-            </h1>
-            <h4 className="about_section_title mb-2">Welcome to Crafty Art,</h4>
-            <p>
-              The Online graphic design tool that makes <br />
-              it easy to create stunning visuals for any project.{" "}
-            </p>
-          </div>
-          <div className="art_img container text-center">
-            <img
-              src="assets/images/sectionimg/about1.png"
-              alt="art"
-              className="img-fluid"
-            />
-          </div>
-        </div>
-      </section>
-      <div className="aboutus_template my-4">
-        <div className="unlimited_template">
-          {/* <div class="unlimited_img">
-          <img src="assets/images/sectionimg/aboutnewbg.png" alt="">
-      </div> */}
-          <div className="template_inner">
-            <h3 className="about_main_title mb-4">Unlimited Templates</h3>
-            <div className="template_content w-75 mx-auto">
-              <p>
-                Unlimited templates provide users with a wide range of creative
-                options for all their design projects.{" "}
-              </p>
-              <p>
-                With a selection of ready-made and custom-made templates, users
-                can quickly and easily create unique designs for logos, flyers,
-                invitations, and more.
-              </p>
-              <p>
-                {" "}
-                With the help of this powerful tool, users can easily create
-                beautiful projects in no time.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="about_design_tool container my-4 border-bottom pb-5">
-          <div className="row">
-            <div className="col-md-5 px-3">
-              <div className="design_tool_left h-100 text-lg-start text-center">
+      <div className="crafty_career">
+        <div className="crafty_career_inner container">
+          <div className="row m-0">
+            <div className="col-lg-6">
+              <div className="crafty_career_bg h-100">
                 <img
-                  src="assets/images/sectionimg/about-4.png"
-                  alt="designtool"
-                  className="img-fluid rounded h-100"
+                  src="assets/images/sectionimg/careerimg.png"
+                  alt="careerbgimg"
+                  className="img-fluid h-100"
                 />
               </div>
             </div>
-            <div className="col-md-7 mt-md-0 mt-3 px-3">
-              <div className="design_tool_right h-100 d-flex justify-content-center flex-column template_content">
-                <h3 className="about_main_title mb-3">
-                  Unlock Your Creativity with the Online Graphic Design Tool
-                  Crafty Art
-                </h3>
-                <p>
-                  An online graphic design tool Crafty Art is a digital platform
-                  that enables users to create professional-looking artwork
-                  using a variety of tools and templates.
-                </p>
-                <p>
-                  It is perfect for those looking to make eye-catching visuals
-                  for websites, social media, and other digital projects.{" "}
-                </p>
-                <p>
-                  It offers a range of features to help users create stunning
-                  designs quickly and easily.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="startup_info container my-3">
-          <div className="text-md-center my-4">
-            <h3 className="about_main_title">
-              One of World’s Fastest-Growing Start-ups
-            </h3>
-            <h4 className="about_section_title fw-normal">
-              “567 World’s Fastest-Growing Companies” from Financial Times.
-            </h4>
-          </div>
-          <div className="startup_info_inner">
-            <div className="row">
-              <div className="col-md-6 px-3">
-                <img
-                  src="assets/images/sectionimg/blogstartup1.png"
-                  alt="blogstartup"
-                  className="img-fluid w-100"
-                />
-              </div>
-              <div className="col-md-6 mt-4 mt-md-0 px-3">
-                <div className="row">
-                  <div className="col-6 px-3">
+            <div className="col-lg-6 my-3 my-lg-0">
+              <div className="d-flex flex-column justify-content-center h-100 px-lg-5 px-0">
+                <div className="sucessfull_msgBox">
+                  <div className="sucessfull_msg text-center">
                     <img
-                      src="assets/images/sectionimg/blogstartup3.png"
-                      alt="blogstartup"
-                      className="img-fluid w-100 h-100"
-                    />
-                  </div>
-                  <div className="col-6 px-3">
-                    <img
-                      src="assets/images/sectionimg/blogstartup2.png"
-                      alt="blogstartup"
-                      className="img-fluid w-100 h-100"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="px-md-5 mx-md-5 px-4 my-5">
-            <div className="row align-items-center">
-              <div className="col-lg-2 col-sm-4 col-6 text-center">
-                <h6 className="color_green1">2023</h6>
-                <p className="mb-0">lanched</p>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6  text-center">
-                <h6 className="color_green1">10M+</h6>
-                <p className="mb-0">MAUS</p>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6  text-center">
-                <h6 className="color_green1">1M+</h6>
-                <p className="mb-0">Design Created</p>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6  text-center">
-                <h6 className="color_green1">143+</h6>
-                <p className="mb-0">Coutries</p>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6  text-center">
-                <h6 className="color_green1">3</h6>
-                <p className="mb-0">Language</p>
-              </div>
-              <div className="col-lg-2 col-sm-4 col-6  text-center">
-                <h6 className="color_green1">100+</h6>
-                <p>Employees</p>
-              </div>
-            </div>
-          </div>
-          <div className="container my-5">
-            <div className="career_section">
-              <div className="career_inner d-none d-sm-block">
-                <div className="career_inner_text">
-                  <h4 className="about_section_title fw-bold  mb-4">
-                    Careers at Crafty art
-                  </h4>
-                  <p className="comman_para w-75 mx-auto mb-4">
-                    Play a major role in India’s fastest growing startup.
-                  </p>
-                  <a
-                    href="career.html"
-                    className="text-decoration-none color_green1 fw-bold"
-                  >
-                    Join Our Team
-                  </a>
-                </div>
-              </div>
-              {/* ========== MOBILE VIEW ======= */}
-              <div className="career_mobile overflow-hidden d-block d-sm-none">
-                <div className="career_inner_text text-center">
-                  <h4 className="about_section_title fw-bold mb-2">
-                    Careers at Crafty art
-                  </h4>
-                  <p className="comman_para w-75 mx-auto mb-2">
-                    Play a major role in India’s fastest growing startup.
-                  </p>
-                  <a
-                    href="javscript:;"
-                    className="text-decoration-none color_green1 fw-bold"
-                  >
-                    Join Our Team
-                  </a>
-                  <div className="career_boy_img mt-3">
-                    <img
-                      src="assets/images/sectionimg/aboutboy.png"
-                      alt="career"
+                      src="assets/images/Icons/sucessfull.png"
+                      alt="sucessfull"
                       className="img-fluid"
                     />
+                    <h3 className="about_main_title my-3">Sucessfull</h3>
+                    <p className="text-capitalize comman_para fw-bold">
+                      <span className="color_green1">Congratulations!!</span>{" "}
+                      &nbsp; you have successfully applied to crafty art
+                    </p>
+                    <p className="comman_para mb-0">
+                      We will review your profile and get back to you
+                      <br /> within two working days.
+                    </p>
                   </div>
                 </div>
               </div>
