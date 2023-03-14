@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function header() {
   return (
@@ -8,13 +9,20 @@ export default function header() {
       <div className="container-fluid">
         {/* ========LOGO FOR DESKTOP====== */}
         <div className="d-none d-sm-block">
-          <a className="navbar-brand navbar_logo_desktop" href="index.html">
+          {/* <a className="navbar-brand navbar_logo_desktop" href="index.html">
             <img
               src="assets/images/Icons/craftyart_logo.png"
               alt="logo"
               className="img-fluid"
             />
-          </a>
+          </a> */}
+          <Link className="navbar-brand navbar_logo_desktop" to="/home">
+            <img
+              src="assets/images/Icons/craftyart_logo.png"
+              alt="logo"
+              className="img-fluid"
+            />
+          </Link>
         </div>
         {/* ========LOGO FOR MOBILE VIEW====== */}
         <div className="d-block d-sm-none">
