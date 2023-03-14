@@ -1055,6 +1055,7 @@ font-size: 14px;
 }
 .insta_post_template .insta_template_left .breadcrumb-item+.breadcrumb-item::before{
     color: #91949C;
+    content: ">";
 }
 .insta_post_template .insta_template_left .template_main .single_template{
     flex: 0 0 12.5%;

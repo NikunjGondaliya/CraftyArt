@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './pages/home/home';
+import ContactUs from './pages/contactus/contactus';
+import CreateBlog from './pages/createblog/createblog';
+import AllTemplate from './pages/allTemplate/allTemplate';
+import Invoice from './pages/invoice/invoice';
+import TermCondition from './pages/term&condition/termCondition';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from 'react-scroll-to-top';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>      
   </React.StrictMode>
 );
 
