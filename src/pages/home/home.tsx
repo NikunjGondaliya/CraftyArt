@@ -2893,6 +2893,4 @@ export default function Home():JSX.Element {
   )
 }
 
-function componentDidMount() {
-  throw new Error('Function not implemented.');
-}
+
