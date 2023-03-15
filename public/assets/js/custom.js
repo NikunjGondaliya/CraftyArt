@@ -15,9 +15,12 @@ $(document).ready(function () {
   });
 });
 
-function demo() {
-  console.log("demo..");
-}
+$(document).on("click", ".common-card", function () {
+  var inputId = $(this).find(":input").attr("id");
+  $("#" + inputId).prop("checked", true);
+  $("div").removeClass("selected-cards");
+  $(this).addClass("selected-cards");
+});
 
 // ======== JQUERY FOR HIDE OFFCANVS ON OPEN MODAL
 $(document).ready(function () {
