@@ -10,6 +10,7 @@ import AllTemplate from "./pages/allTemplate/allTemplate";
 import ContactUs from "./pages/contactus/contactus";
 import CreateBlog from "./pages/createblog/createblog";
 import Invoice from "./pages/invoice/invoice";
+import PricePlan from "./pages/pricePlan/pricePlan";
 
 function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/alltemplate" element={<AllTemplate />} />
         <Route path="/invoice" element={<Invoice />} />
+        <Route path="/pricePlans" element={<PricePlan />} />
         <Route path="/term-condition" element={<TermCondition />} />
       </Routes>
       <Footer />

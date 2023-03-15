@@ -37,6 +37,13 @@ export default function Home(): JSX.Element {
                 <i className="fa-sharp fa-solid fa-crown fs-5" />
                 <span>Premium</span>
               </a>
+
+              <Link
+                to="/alltemplate"
+                className="show_more_link text-decoration-none me-3"
+              >
+                Show more
+              </Link>
             </div>
             <div className="bottom_footer_link">
               <a
