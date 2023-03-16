@@ -489,7 +489,7 @@ export default function Footer() {
                       </li>
                       <li className="py-2">
                         <Link
-                          to="/home"
+                          to="/"
                           className="text-decoration-none footer_items"
                         >
                           Instagram Story

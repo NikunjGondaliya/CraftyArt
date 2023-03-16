@@ -30,7 +30,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/createblog" element={<CreateBlog />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/alltemplate" element={<AllTemplate />} />
