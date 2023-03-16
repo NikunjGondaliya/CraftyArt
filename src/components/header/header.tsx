@@ -275,13 +275,6 @@ export default function header() {
               <div className="d-lg-block d-none">
                 <div className="header_right d-flex align-items-center">
                   <div className="pricing">
-                    {/* <a
-                      href="price&plan.html"
-                      className="text-decoration-none me-3"
-                    >
-                      <i className="fa-solid fa-crown text-warning me-2" />
-                      <span className="text-black">Pricing</span>
-                    </a> */}
                     <Link
                       to="/pricePlans"
                       className="text-decoration-none me-3"
