@@ -480,6 +480,7 @@ export default function Home(): JSX.Element {
             >
               Show more
             </a>
+            {/* <Link to={"javascript:;"} className="show_more_link text-decoration-none me-3 d-none d-lg-block">Show more</Link> */}
           </div>
           <div className="gallery_main">
             <div className="gallery_inner">
