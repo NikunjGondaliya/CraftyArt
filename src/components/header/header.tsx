@@ -287,6 +287,7 @@ export default function header() {
                       className="text-decoration-none me-3"
                     >
                       <i className="fa-solid fa-crown text-warning me-2" />
+                      <span className="text-black">Pricing</span>
                     </Link>
                   </div>
                   <div className="login_btn d-flex justify-content-between align-items-center">
