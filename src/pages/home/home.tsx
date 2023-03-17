@@ -27,19 +27,20 @@ export default function Home(): JSX.Element {
               </a>
             </div>
             <div className="bottom_footer_link">
-              <a
+              {/* <a
                 href="price&plan.html"
                 className="d-flex flex-column align-items-center text-decoration-none"
               >
                 <i className="fa-sharp fa-solid fa-crown fs-5" />
                 <span>Premium</span>
-              </a>
+              </a> */}
 
               <Link
-                to="/alltemplate"
-                className="show_more_link text-decoration-none me-3"
+                to="/pricePlans"
+                className="d-flex flex-column align-items-center text-decoration-none"
               >
-                Show more
+                <i className="fa-sharp fa-solid fa-crown fs-5" />
+                <span>Premium</span>
               </Link>
             </div>
             <div className="bottom_footer_link">
@@ -1012,21 +1013,12 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Latest Templates</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
               >
                 Show more
               </Link>
-              {/* <text name='Show more' aria-label='Show more' onClick={()=>{
-            navigate('./alltemplate')
-          }}/> */}
             </div>
             <div className="gallery_main">
               <div className="gallery_inner">
@@ -1215,12 +1207,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Latest Templates</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
@@ -1402,12 +1388,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta Post</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
@@ -1599,12 +1579,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta Story</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
@@ -1815,12 +1789,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Logo</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
@@ -2044,12 +2012,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Invitation</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
@@ -2261,12 +2223,6 @@ export default function Home(): JSX.Element {
           <div className="container-fluid">
             <div className="section_title_main d-flex justify-content-between align-items-center pb-3">
               <h3 className="section_title mb-0">Insta (Landscape)</h3>
-              {/* <a
-            href="alltemplate.html"
-            className="show_more_link text-decoration-none me-3"
-          >
-            Show more
-          </a> */}
               <Link
                 to="/alltemplate"
                 className="show_more_link text-decoration-none me-3"
