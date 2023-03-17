@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Successful() {
   return (
@@ -7,13 +8,10 @@ export default function Successful() {
         <div className="small_screen_footer_link position-relative">
           <div className="d-flex justify-content-between">
             <div className="bottom_footer_link">
-              <a
-                href="index.html"
-                className="d-flex flex-column align-items-center text-decoration-none active"
-              >
-                <i className="fa-sharp fa-solid fa-house fs-5" />
-                <span>Home</span>
-              </a>
+              <Link to="/" className="d-flex flex-column align-items-center text-decoration-none active">
+                  <i className="fa-sharp fa-solid fa-house fs-5" />
+                  <span>Home</span>
+              </Link>
             </div>
             <div className="bottom_footer_link">
               <a

@@ -6,7 +6,7 @@ export default function PricePlan() {
       <div className="row mx-5">
         <div
           className="faq_main  col-md-6"
-          style={{ backgroundColor: "#F5F5F5" }}
+          style={{ backgroundColor: "#F5F5F5", paddingTop:'25px' }}
         >
           <div className="section_heading text-center mb-4 pb-2">
             <h5 className="color_green1">Welcome To Crafty Art Design</h5>
@@ -152,7 +152,7 @@ export default function PricePlan() {
           <div className="choose-plan-inner px-sm-0 px-3">
             <div className="justify-content-center align-items-center flex-wrap">
               <div className="px-3 mb-4">
-                <div className="choose-plan-card common-card" id="basic">
+                <div className="choose-plan-card common-card selected-cards" id="basic">
                   <div className="d-flex justify-content-between align-items-center">
                     <div className="radioButton">
                       <input
@@ -217,15 +217,16 @@ export default function PricePlan() {
             <div className="choose-plan-inner px-sm-0 px-3">
               <div
                 className="choose-plan-card"
-                style={{ backgroundColor: "#F5F5F5" }}
+                style={{ backgroundColor: "#F5F5F5", paddingLeft:"0", paddingRight:"0" }}
               >
                 <button
                   type="button"
-                  className="btn text-center w-100"
+                  className="w-100 register_btn text-decoration-none login_modal_open"
                   data-bs-toggle="modal"
                   data-bs-target="#payout"
+                  style={{ border:"none"}}
                 >
-                  Get Started
+                 Continue
                 </button>
               </div>
             </div>

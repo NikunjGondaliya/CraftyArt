@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ContactUs() {
   return (
@@ -8,13 +9,10 @@ export default function ContactUs() {
     <div className="small_screen_footer_link position-relative">
       <div className="d-flex justify-content-between">
         <div className="bottom_footer_link">
-          <a
-            href="index.html"
-            className="d-flex flex-column align-items-center text-decoration-none active"
-          >
+          <Link to="/" className="d-flex flex-column align-items-center text-decoration-none active">
             <i className="fa-sharp fa-solid fa-house fs-5" />
             <span>Home</span>
-          </a>
+          </Link>
         </div>
         <div className="bottom_footer_link">
           <a
@@ -473,7 +471,7 @@ export default function ContactUs() {
           </a>
         </div>
         <div className="col-lg-3 col-sm-6 mb-3">
-          <a
+          {/* <a
             href="javascript:;"
             className="enhance-process-card text-center text-decoration-none d-inline-block"
           >
@@ -488,10 +486,23 @@ export default function ContactUs() {
             <p className="mb-0 comman_para">
               Answer to Crafty Art subscriptions and payment errors
             </p>
-          </a>
+          </a> */}
+          <Link to="/subscriptions" className="enhance-process-card text-center text-decoration-none d-inline-block">
+            <div className="enhance-card-image mb-3">
+              <img
+                src="assets/images/Icons/payment.png"
+                alt="payment"
+                className="img-fluid"
+              />
+            </div>
+            <h3 className="contactus_title">Subscriptions &amp; Payment</h3>
+            <p className="mb-0 comman_para">
+              Answer to Crafty Art subscriptions and payment errors
+            </p>
+          </Link>
         </div>
         <div className="col-lg-3 col-sm-6 mb-3">
-          <a
+          {/* <a
             className="enhance-process-card text-center d-inline-block text-decoration-none"
             href="term&condition.html"
           >
@@ -506,10 +517,23 @@ export default function ContactUs() {
             <p className="mb-0 comman_para">
               Include the Graphic Content and Template for commercial use
             </p>
-          </a>
+          </a> */}
+          <Link to="/term-condition" className="enhance-process-card text-center d-inline-block text-decoration-none">
+            <div className="enhance-card-image mb-3">
+              <img
+                src="assets/images/Icons/t&c.png"
+                alt="t&c"
+                className="img-fluid"
+              />
+            </div>
+            <h3 className="contactus_title">Terms and Conditions</h3>
+            <p className="mb-0 comman_para">
+              Include the Graphic Content and Template for commercial use
+            </p>
+          </Link>
         </div>
         <div className="col-lg-3 col-sm-6 mb-3">
-          <a
+          {/* <a
             className="enhance-process-card text-center text-decoration-none d-inline-block"
             href="term&condition.html"
           >
@@ -525,7 +549,21 @@ export default function ContactUs() {
               Our policies ensure you have a safe and professional experience on
               crafty art
             </p>
-          </a>
+          </a> */}
+          <Link to="/term-condition" className="enhance-process-card text-center text-decoration-none d-inline-block">
+            <div className="enhance-card-image mb-3">
+              <img
+                src="assets/images/Icons/privacy.png"
+                alt="privacy"
+                className="img-fluid"
+              />
+            </div>
+            <h3 className="contactus_title">Privacy Policy</h3>
+            <p className="mb-0 comman_para">
+              Our policies ensure you have a safe and professional experience on
+              crafty art
+            </p>
+          </Link>
         </div>
       </div>
     </div>

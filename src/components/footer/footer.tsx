@@ -774,12 +774,9 @@ export default function Footer() {
                           </a>
                         </li>
                         <li className="py-2">
-                          <a
-                            href="index.html"
-                            className="text-decoration-none footer_items"
-                          >
+                          <Link to="/" className="text-decoration-none footer_items">
                             Instagram Story
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                       <ul className="list-unstyled">

@@ -76,7 +76,7 @@ export default function CreateBlog() {
                       </div> */}
             </div>
           </div>
-          <textarea name="editor" id="editor" defaultValue={""} />
+          <textarea name="editor" id="editor"/>
         </div>
       </div>
     </div>
