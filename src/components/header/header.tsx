@@ -11,13 +11,6 @@ export default function header() {
           <div className="container-fluid">
             {/* ========LOGO FOR DESKTOP====== */}
             <div className="d-none d-sm-block">
-              {/* <a className="navbar-brand navbar_logo_desktop" href="index.html">
-            <img
-              src="assets/images/Icons/craftyart_logo.png"
-              alt="logo"
-              className="img-fluid"
-            />
-          </a> */}
               <Link className="navbar-brand navbar_logo_desktop" to="/">
                 <img
                   src="assets/images/Icons/craftyart_logo.png"
@@ -28,13 +21,13 @@ export default function header() {
             </div>
             {/* ========LOGO FOR MOBILE VIEW====== */}
             <div className="d-block d-sm-none">
-              <a className="navbar-brand navbar_logo_mobile" href="index.html">
+              <Link to="/" className="navbar-brand navbar_logo_mobile">
                 <img
                   src="assets/images/Icons/craftysmall.png"
                   alt="logo"
                   className="img-fluid"
                 />
-              </a>
+              </Link>
             </div>
             <div className="header_search_box d-none">
               <div className="search_input d-flex align-items-center h-100">

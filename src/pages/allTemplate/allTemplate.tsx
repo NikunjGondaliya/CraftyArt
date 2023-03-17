@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function AllTemplate() {
   return (
@@ -8,10 +9,10 @@ export default function AllTemplate() {
     <div className="small_screen_footer_link position-relative">
       <div className="d-flex justify-content-between">
         <div className="bottom_footer_link">
-          <a href="index.html" className="d-flex flex-column align-items-center text-decoration-none active">
+          <Link to="/" className="d-flex flex-column align-items-center text-decoration-none active">
             <i className="fa-sharp fa-solid fa-house fs-5" />
             <span>Home</span>
-          </a>
+          </Link>
         </div>
         <div className="bottom_footer_link">
           <a href="javscript:;" className="d-flex flex-column align-items-center text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#creation_bottom">
@@ -868,6 +869,9 @@ export default function AllTemplate() {
                     <a href="javscript:;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <img src="assets/images/invitation/invitaion-1.png" alt="templateinsta" />
                     </a>
+                    {/* <Link to="/subTemplate">
+                      <img src="assets/images/invitation/invitaion-1.png" alt="templateinsta" />
+                    </Link> */}
                   </div> 
                   <div className="img_small_title mt-2">
                     <h6 className="mb-0">Bright Yellow and Black Photographic Fitness Service Website</h6>

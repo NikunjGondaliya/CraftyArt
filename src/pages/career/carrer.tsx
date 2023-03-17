@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Career(): JSX.Element {
   return (
@@ -8,13 +9,10 @@ export default function Career(): JSX.Element {
         <div className="small_screen_footer_link position-relative">
           <div className="d-flex justify-content-between">
             <div className="bottom_footer_link">
-              <a
-                href="index.html"
-                className="d-flex flex-column align-items-center text-decoration-none active"
-              >
-                <i className="fa-sharp fa-solid fa-house fs-5" />
-                <span>Home</span>
-              </a>
+              <Link to="/" className="d-flex flex-column align-items-center text-decoration-none active">
+                  <i className="fa-sharp fa-solid fa-house fs-5" />
+                  <span>Home</span>
+              </Link>
             </div>
             <div className="bottom_footer_link">
               <a
@@ -438,12 +436,13 @@ export default function Career(): JSX.Element {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <a
+                  {/* <a
                     className="w-100 register_btn text-decoration-none login_modal_open"
                     href="successfull.html"
                   >
                     Apply
-                  </a>
+                  </a> */}
+                  <Link to="/successfull" className="w-100 register_btn text-decoration-none login_modal_open">Apply</Link>
                 </div>
                 <div className="mb-3">
                   <a

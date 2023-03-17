@@ -16,12 +16,13 @@ import Blog from "./pages/blog/blog";
 import Career from "./pages/career/carrer";
 import Subscriptions from "./pages/subscriptions/subscriptions";
 import Successful from "./pages/successfull/successfull";
+import SubTemplates from "./pages/allTemplate/subTemplates";
 
 function App() {
   const location = useLocation();
   // Scroll to top if path changes
   useLayoutEffect(() => {
-    loadjs("assets/js/owl.js", () => {});
+    loadjs("assets/js/custom.js", () => {});
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/subscriptions" element={<Subscriptions />} />
         <Route path="/successfull" element={<Successful />} />
+        <Route path="/subTemplate" element={<SubTemplates />} />
       </Routes>
       <Footer />
     </>

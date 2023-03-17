@@ -205,6 +205,8 @@ export default function LoginRegister(){
                               className="w-100 register_btn text-decoration-none"
                               href="javascript:;"
                               role="button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#send_otp_modal"
                             >
                               Sign in
                             </a>
@@ -471,7 +473,9 @@ export default function LoginRegister(){
                       />
                     </div>
                     <div className="signup_btn">
-                      <a className="w-100 register_btn text-decoration-none">
+                      <a className="w-100 register_btn text-decoration-none" href="javascript:;"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#send_otp_modal">
                         Sign up
                       </a>
                     </div>
@@ -883,6 +887,8 @@ export default function LoginRegister(){
                                 <a
                                   className="w-100 register_btn text-decoration-none"
                                   href="javascript:;"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#send_otp_modal"
                                   role="button"
                                 >
                                   Sign in
@@ -976,7 +982,9 @@ export default function LoginRegister(){
                           />
                         </div>
                         <div className="signup_btn">
-                          <a className="w-100 register_btn text-decoration-none">
+                          <a className="w-100 register_btn text-decoration-none" href="javascript:;"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#send_otp_modal">
                             Sign up
                           </a>
                         </div>
